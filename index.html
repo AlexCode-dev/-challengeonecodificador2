@@ -1,0 +1,80 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alura Challenge-Encriptador-Boglione Alejo</title>
+    <link rel="stylesheet" href="/Style/normalize.css" />
+    <link rel="stylesheet" href="/Style/style.css" />
+    <link rel="stylesheet" href="/encriptador.js" />
+  </head>
+  <body>
+    <header>
+      <img src="/Img/Logo.png" alt="" class="img-header" />
+    </header>
+    <main>
+      <div class="divOne-main">
+        <textarea
+          name=""
+          id="textarea"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese texto a encriptar o desencriptar.."
+        ></textarea>
+        <div class="divOne-Main__bottoms">
+          <p>Solo letras minúsculas y sin acentos</p>
+          <div class="bottomss">
+            <!----  <button class="encriptar" onclick="encriptartexto()">
+              <a href="" >Encriptar</a>
+            </button>
+            
+            <button class="desencriptar"><a href="">Desencriptar</a></button>
+   
+         --->
+
+            <input
+              type="submit"
+              name="submit"
+              class="button"
+              id="encriptar"
+              value="Encriptar"
+              onclick="encriptartexto()"
+            />
+            <input
+              type="submit"
+              name="submit"
+              class="button"
+              id="desencriptar"
+              value="Desencriptar"
+              onclick="desencriptartexto()"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="divTwo-main">
+        <img id="imgTwo" src="/Img/Muñeco.png" alt="" />
+        <div class="divTwo-Main__bottoms">
+          <div class="text">
+            <h3 id="h3Two">Ningun Texto fue codificado o decodificado</h3>
+            <p id="pTwo">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+          <!--<button>Copiar</button>-->
+          <input
+            type="submit"
+            name="submit"
+            class="button"
+            id="copiar"
+            value="Copiar"
+            onclick="copiartexto()"
+          />
+        </div>
+      </div>
+    </main>
+    <script src="/encriptador.js"> </script>
+  </body>
+
+  
+</html>
